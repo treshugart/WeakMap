@@ -39,7 +39,7 @@ function createStorage(){
 // allows private/namespaced properties for the objects
 var _ = createStorage();
 
-functioon Wrapper(element){
+function Wrapper(element){
   var _element = _(element);
   if (_element.wrapper)
     return _element.wrapper;
