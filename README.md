@@ -58,6 +58,9 @@ Wrapper.prototype = {
 };
 ```
 
+## Implementation
+
+Under the hood, `WeakMap` uses `Object.setProperty` to create a unique property on each object that is added to a `WeakMap`, then the value of that property is used as the key to perform lookups into a regular JavaScript `Object`.
 
 ## API Reference
 
