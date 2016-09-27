@@ -11,7 +11,19 @@ If using node, install via:
 
     npm install weakmap
 
-In the browser, include __weakmap.js__ or __weakmap.min.js__ and WeakMap will be exposed on the window.
+There is both a `weakmap.js` and a `weakmap.min.js`. You can use either a `<script>` tag:
+
+```html
+<!-- Will create window.WeakMap -->
+<script src="node_modules/weakmap/weakmap.min.js"></script>
+```
+
+Or CommonJS:
+
+```js
+// Exports WeakMap and does not affect the global
+const WeakMap = require('weakmap');
+```
 
 ## Overview
 
